@@ -75,7 +75,6 @@ body {
 .underline {
   width: 120px;
   height: 6px;
-  background: var(--accent);
   border-radius: 3px;
   margin: 12px auto;
 }
