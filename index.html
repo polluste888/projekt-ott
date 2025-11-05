@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OTT TÄNAK</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header class="navbar">
       <a href="#avaleht" class="logo">OTT TÄNAK</a>
-      <nav class="menu">
+      <nav class="menu" aria-label="Põhinavigatsioon">
         <a href="#avaleht">Avaleht</a>
         <a href="#saavutused">Saavutused</a>
         <a href="#galerii">Galerii</a>
@@ -19,252 +22,284 @@
       </nav>
     </header>
 
-    <section id="avaleht">…</section>
+    <main>
+      <section id="avaleht" aria-label="Avaleht"></section>
 
-    <section class="hero section">
-      <h1>OTT TÄNAK</h1>
-      <div class="underline"></div>
-      <p class="subtitle">2019 WRC Maailmameister</p>
-      <p class="description">
-        Eesti rallisõitja, kes on vallutanud maailma tipp taseme oma kiiruse,
-        täpsuse ja vastupidava pühendumusega motospordile.
-      </p>
-      <a href="#saavutused" class="btn">Vaata Saavutusi</a>
-    </section>
-
-    <section id="saavutused" class="achievements">
-      <div class="achv-container">
-        <h2 class="achv-title">Saavutused</h2>
-        <p class="achv-lead">
-          Ott Tänaku karjäär on täis silmapaistvaid võite ja saavutusi maailma
-          rallimaailmas.
+      <section class="hero section" aria-labelledby="hero-title">
+        <h1 id="hero-title">OTT TÄNAK</h1>
+        <div class="underline" aria-hidden="true"></div>
+        <p class="subtitle">2019 WRC Maailmameister</p>
+        <p class="description">
+          Eesti rallisõitja, kes on vallutanud maailma tipp taseme oma kiiruse,
+          täpsuse ja vastupidava pühendumusega motospordile.
         </p>
-        <ul class="timeline">
-          <li class="timeline-item">
-           <i class="fa fa-flag-checkered" aria-hidden="true"></i>
-            <div class="card">
-              <span class="year">2022</span>
-              <h3 class="card-title">Võitude Kogumine</h3>
-              <p class="card-meta">Meeskond: Hyundai Motorsport</p>
-              <p class="card-desc">
-                Saavutas mitmeid poodiumikohti ja jätkas võitlust tipp tasemel.
-              </p>
-            </div>
-          </li>
-          <li class="timeline-item">
-            <i class="fa fa-calendar"></i>
-            <div class="card">
-              <span class="year">2021</span>
-              <h3 class="card-title">Ralliga Jätkamine</h3>
-              <p class="card-meta">Meeskond: Hyundai Motorsport</p>
-              <p class="card-desc">
-                Jätkas tugevaid esitusi WRC etappidel koos Hyundaiga.
-              </p>
-            </div>
-          </li>
-          <li class="timeline-item">
-            <i class="fa fa-handshake-o" aria-hidden="true"></i>
-            <div class="card">
-              <span class="year">2020</span>
-              <h3 class="card-title">Hyundaiga Liitumine</h3>
-              <p class="card-meta">Meeskond: Hyundai Motorsport</p>
-              <p class="card-desc">
-                Liitus Hyundai Motorsportiga, jätkates võitlust MM-tiitli nimel.
-              </p>
-            </div>
-          </li>
-          <li class="timeline-item">
-            <i class="fa fa-trophy"></i>
-            <div class="card">
-              <span class="year">2019</span>
-              <h3 class="card-title">WRC Maailmameister</h3>
-              <p class="card-meta">Meeskond: Toyota Gazoo Racing</p>
-              <p class="card-desc">
-                Esimene eestlane, kes võitis WRC maailmameistri tiitli,
-                saavutades 6 etapivõitu.
-              </p>
-            </div>
-          </li>
-          <li class="timeline-item">
-            <i class="fa fa-frown-o" aria-hidden="true"></i>
-            <div class="card">
-              <span class="year">2018</span>
-              <h3 class="card-title">WRC Vice-Maailmameister</h3>
-              <p class="card-meta">Meeskond: Toyota Gazoo Racing</p>
-              <p class="card-desc">
-                Tugev hooaeg 5 etapivõiduga, lõpetades teise kohaga
-                üldkokkuvõttes.
-              </p>
-            </div>
-          </li>
-          <li class="timeline-item">
-           <i class="fa fa-frown-o" aria-hidden="true"></i>
-            <div class="card">
-              <span class="year">2017</span>
-              <h3 class="card-title">WRC 2. koht</h3>
-              <p class="card-meta">Meeskond: M-Sport Ford</p>
-              <p class="card-desc">
-                Esimene täishooaeg M-Sport Fordis, millega võitis 4 rallit.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+        <a href="#saavutused" class="btn">Vaata Saavutusi</a>
+      </section>
 
-    <section id="galerii" class="gallery-section">
-      <div class="gallery-head">
-        <h2>Galerii</h2>
-        <div class="g-underline"></div>
-        <p>
-          Pilte Ott Tänaku põnevate hetkede stseenidest ralliradadel üle kogu
-          maailma.
-        </p>
-      </div>
+      <section id="saavutused" class="achievements" aria-labelledby="achv-title">
+        <div class="achv-container">
+          <h2 id="achv-title" class="achv-title">Saavutused</h2>
+          <p class="achv-lead">
+            Ott Tänaku karjäär on täis silmapaistvaid võite ja saavutusi maailma rallimaailmas.
+          </p>
 
-      <div class="gallery-grid">
-        <a class="g-item" href="#" aria-label="foto">
-          <img src="images/ott lend.jpg" />
-        </a>
-        <a class="g-item" href="#" aria-label="foto">
-          <img src="images/ott muda.jpg" />
-        </a>
-        <a class="g-item" href="#" aria-label="foto">
-          <img src="images/ford lumi.jpg" />
-        </a>
-        <a class="g-item" href="#" aria-label="foto">
-          <img src="images/ott jump.jpg" />
-        </a>
-        <a class="g-item" href="#" aria-label="foto">
-          <img src="images/ott monte.jpg" />
-        </a>
-        <a class="g-item" href="#" aria-label="foto">
-          <img src="images/ott tolm.jpg" />
-        </a>
-      </div>
-    </section>
-
-    <section id="meeskond" class="teams section">
-      <div class="teams-head">
-        <h2>Meeskonnad</h2>
-        <div class="t-underline"></div>
-        <p>Koostöö maailma tipptaseme rallitiimidega läbi aastate.</p>
-      </div>
-
-      <div class="team-grid">
-        <article class="team-card">
-          <div class="team-media">
-            <img src="images/hyundai ott.jpg" />
-            <div class="media-overlay">
-              <div class="period">2020 – Praegu</div>
-              <h3>Hyundai Motorsport</h3>
-            </div>
-          </div>
-          <div class="team-body">
-            <p>Hyundai i20 N Rally1</p>
-            <p>
-              Praegune meeskond, millega jätkab võitlust WRC
-              maailmameistrivõistlustel.
-            </p>
-          </div>
-        </article>
-
-        <article class="team-card">
-          <div class="team-media">
-            <img src="images/toyota.jpg" />
-            <div class="media-overlay">
-              <div class="period">2017 – 2019</div>
-              <h3>Toyota Gazoo Racing</h3>
-            </div>
-          </div>
-          <div class="team-body">
-            <p>Toyota Yaris WRC</p>
-            <p>
-              Meeskond, millega võitis 2019. aastal WRC maailmameistri tiitli.
-            </p>
-          </div>
-        </article>
-
-        <article class="team-card">
-          <div class="team-media">
-            <img src="images/ford ott.jpg" />
-            <div class="media-overlay">
-              <div class="period">2016 – 2017</div>
-              <h3>M-Sport Ford</h3>
-            </div>
-          </div>
-          <div class="team-body">
-            <p>Ford Fiesta WRC</p>
-            <p>
-              Esimene täishooaeg WRC-s, millega saavutas kohe tugevaid tulemusi.
-            </p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="sotsiaal" class="social section">
-      <div class="social-head">
-        <h2>Sotsiaalmeedia</h2>
-        <div class="s-underline"></div>
-        <p>Jälgi mind sotsiaalmeedias ja ole kursis viimaste ralliuudistega!</p>
-      </div>
-
-      <div class="social-card">
-        <ul class="social-list">
-          <li>
-            <a class="social-link" href="https://www.instagram.com/otttanak">
-              <div class="left">
-                <i class="fa fa-instagram"></i>
-                <div class="text">
-                  <div class="title">Instagram</div>
-                  <div class="sub">@otttanak</div>
-                </div>
+          <ul class="timeline">
+            <li class="timeline-item">
+              <i class="fa fa-flag-checkered" aria-hidden="true"></i>
+              <div class="card">
+                <span class="year">2022</span>
+                <h3 class="card-title">Võitude Kogumine</h3>
+                <p class="card-meta">Meeskond: Hyundai Motorsport</p>
+                <p class="card-desc">
+                  Saavutas mitmeid poodiumikohti ja jätkas võitlust tipp tasemel.
+                </p>
               </div>
-            </a>
-          </li>
-          <li>
-            <a class="social-link" href="https://twitter.com/OttTanak">
-              <div class="left">
-                <i class="fa fa-twitter"></i>
-                <div class="text">
-                  <div class="title">Twitter</div>
-                  <div class="sub">@OttTanak</div>
-                </div>
+            </li>
+
+            <li class="timeline-item">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <div class="card">
+                <span class="year">2021</span>
+                <h3 class="card-title">Ralliga Jätkamine</h3>
+                <p class="card-meta">Meeskond: Hyundai Motorsport</p>
+                <p class="card-desc">
+                  Jätkas tugevaid esitusi WRC etappidel koos Hyundaiga.
+                </p>
               </div>
-            </a>
-          </li>
-          <li>
-            <a class="social-link" href="https://www.youtube.com/@OttTanak">
-              <div class="left">
-                <i class="fa fa-youtube-play"></i>
-                <div class="text">
-                  <div class="title">YouTube</div>
-                  <div class="sub">Vaata videoid</div>
-                </div>
+            </li>
+
+            <li class="timeline-item">
+              <i class="fa fa-handshake-o" aria-hidden="true"></i>
+              <div class="card">
+                <span class="year">2020</span>
+                <h3 class="card-title">Hyundaiga Liitumine</h3>
+                <p class="card-meta">Meeskond: Hyundai Motorsport</p>
+                <p class="card-desc">
+                  Liitus Hyundai Motorsportiga, jätkates võitlust MM-tiitli nimel.
+                </p>
               </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-<footer>
+            </li>
+
+            <li class="timeline-item">
+              <i class="fa fa-trophy" aria-hidden="true"></i>
+              <div class="card">
+                <span class="year">2019</span>
+                <h3 class="card-title">WRC Maailmameister</h3>
+                <p class="card-meta">Meeskond: Toyota Gazoo Racing</p>
+                <p class="card-desc">
+                  Esimene eestlane, kes võitis WRC maailmameistri tiitli, saavutades 6 etapivõitu.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <i class="fa fa-frown-o" aria-hidden="true"></i>
+              <div class="card">
+                <span class="year">2018</span>
+                <h3 class="card-title">WRC Vice-Maailmameister</h3>
+                <p class="card-meta">Meeskond: Toyota Gazoo Racing</p>
+                <p class="card-desc">
+                  Tugev hooaeg 5 etapivõiduga, lõpetades teise kohaga üldkokkuvõttes.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <i class="fa fa-frown-o" aria-hidden="true"></i>
+              <div class="card">
+                <span class="year">2017</span>
+                <h3 class="card-title">WRC 2. koht</h3>
+                <p class="card-meta">Meeskond: M-Sport Ford</p>
+                <p class="card-desc">
+                  Esimene täishooaeg M-Sport Fordis, millega võitis 4 rallit.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="galerii" class="gallery-section" aria-labelledby="gallery-title">
+        <div class="gallery-head">
+          <h2 id="gallery-title">Galerii</h2>
+          <div class="g-underline" aria-hidden="true"></div>
+          <p>
+            Pilte Ott Tänaku põnevate hetkede stseenidest ralliradadel üle kogu maailma.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <a class="g-item" href="#" aria-label="Foto: õhulend rallihüppel">
+            <img src="images/ott lend.jpg" alt="Ott Tänak hüppel" loading="lazy" />
+          </a>
+          <a class="g-item" href="#" aria-label="Foto: mudane katse">
+            <img src="images/ott muda.jpg" alt="Ott Tänak mudasel katsel" loading="lazy" />
+          </a>
+          <a class="g-item" href="#" aria-label="Foto: Ford lumel">
+            <img src="images/ford lumi.jpg" alt="Ford lumisel rallirajal" loading="lazy" />
+          </a>
+          <a class="g-item" href="#" aria-label="Foto: suur hüpe">
+            <img src="images/ott jump.jpg" alt="Ott Tänak suure hüppega" loading="lazy" />
+          </a>
+          <a class="g-item" href="#" aria-label="Foto: Monte Carlo ralli">
+            <img src="images/ott monte.jpg" alt="Ott Tänak Monte Carlo rallil" loading="lazy" />
+          </a>
+          <a class="g-item" href="#" aria-label="Foto: tolmune katse">
+            <img src="images/ott tolm.jpg" alt="Ott Tänak tolmusel katsel" loading="lazy" />
+          </a>
+        </div>
+      </section>
+
+      <section id="meeskond" class="teams section" aria-labelledby="teams-title">
+        <div class="teams-head">
+          <h2 id="teams-title">Meeskonnad</h2>
+          <div class="t-underline" aria-hidden="true"></div>
+          <p>Koostöö maailma tipptaseme rallitiimidega läbi aastate.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="team-media">
+              <img src="images/hyundai ott.jpg" alt="Hyundai Motorsport" loading="lazy" />
+              <div class="media-overlay" aria-hidden="true">
+                <div class="period">2020 – Praegu</div>
+                <h3>Hyundai Motorsport</h3>
+              </div>
+            </div>
+            <div class="team-body">
+              <p>Hyundai i20 N Rally1</p>
+              <p>
+                Praegune meeskond, millega jätkab võitlust WRC maailmameistrivõistlustel.
+              </p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-media">
+              <img src="images/toyota.jpg" alt="Toyota Gazoo Racing" loading="lazy" />
+              <div class="media-overlay" aria-hidden="true">
+                <div class="period">2017 – 2019</div>
+                <h3>Toyota Gazoo Racing</h3>
+              </div>
+            </div>
+            <div class="team-body">
+              <p>Toyota Yaris WRC</p>
+              <p>
+                Meeskond, millega võitis 2019. aastal WRC maailmameistri tiitli.
+              </p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-media">
+              <img src="images/ford ott.jpg" alt="M-Sport Ford" loading="lazy" />
+              <div class="media-overlay" aria-hidden="true">
+                <div class="period">2016 – 2017</div>
+                <h3>M-Sport Ford</h3>
+              </div>
+            </div>
+            <div class="team-body">
+              <p>Ford Fiesta WRC</p>
+              <p>
+                Esimene täishooaeg WRC-s, millega saavutas kohe tugevaid tulemusi.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="sotsiaal" class="social section" aria-labelledby="social-title">
+        <div class="social-head">
+          <h2 id="social-title">Sotsiaalmeedia</h2>
+          <div class="s-underline" aria-hidden="true"></div>
+          <p>Jälgi mind sotsiaalmeedias ja ole kursis viimaste ralliuudistega!</p>
+        </div>
+
+        <div class="social-card">
+          <ul class="social-list">
+            <li>
+              <a
+                class="social-link"
+                href="https://www.instagram.com/otttanak"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram: @otttanak"
+              >
+                <div class="left">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <div class="text">
+                    <div class="title">Instagram</div>
+                    <div class="sub">@otttanak</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link"
+                href="https://twitter.com/OttTanak"
+                target="_blank"
+                rel="noopener"
+                aria-label="Twitter: @OttTanak"
+              >
+                <div class="left">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <div class="text">
+                    <div class="title">Twitter</div>
+                    <div class="sub">@OttTanak</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link"
+                href="https://www.youtube.com/@OttTanak"
+                target="_blank"
+                rel="noopener"
+                aria-label="YouTube: Vaata videoid"
+              >
+                <div class="left">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                  <div class="text">
+                    <div class="title">YouTube</div>
+                    <div class="sub">Vaata videoid</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
       <div class="tekst-footeris">
         <div class="f-col brand">
           <h3>OTT TÄNAK</h3>
           <p>Eesti rallisõitja ja 2019 WRC maailmameister.</p>
           <div class="f-social">
-            <a class="ext" href="https://www.instagram.com/otttanak/"
-              ><i class="fa fa-instagram"></i
+            <a
+              class="ext"
+              href="https://www.instagram.com/otttanak/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+              ><i class="fa fa-instagram" aria-hidden="true"></i
             ></a>
-
-            <a href="https://x.com/OttTanak" aria-label="X"
-              ><i class="fa fa-twitter"></i
+            <a
+              href="https://x.com/OttTanak"
+              target="_blank"
+              rel="noopener"
+              aria-label="X"
+              ><i class="fa fa-twitter" aria-hidden="true"></i
             ></a>
             <a
               href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener"
               aria-label="YouTube"
-              ><i class="fa fa-youtube-play"></i
+              ><i class="fa fa-youtube-play" aria-hidden="true"></i
             ></a>
           </div>
         </div>
@@ -281,10 +316,9 @@
       </div>
 
       <div class="lorem">
-        <div>© 2025 Ott Tänak. Kõik õigused kaitstud.
-        <div>Loodud armastusega Eesti rallispordi vastu 🚗
+        <div>© 2025 Ott Tänak. Kõik õigused kaitstud.</div>
+        <div>Loodud armastusega Eesti rallispordi vastu 🚗</div>
       </div>
     </footer>
   </body>
 </html>
-

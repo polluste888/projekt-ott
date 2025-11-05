@@ -10,9 +10,8 @@
   --shadow1: 0 6px 16px rgba(0, 0, 0, 0.3);
   --shadow2: 0 8px 20px rgba(13, 34, 80, 0.08);
 }
-* {
-  box-sizing: border-box;
-}
+
+
 html,
 body,
 ul {
@@ -105,25 +104,6 @@ body {
 }
 .btn:hover {
   background: var(--accentH);
-}
-.arrow {
-  margin-top: 50px;
-  animation: bounce 2s infinite;
-}
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(8px);
-  }
-}
-
-#galerii,
-#meeskond,
-#sotsiaal {
-  scroll-margin-top: 80px;
 }
 
 @media (max-width: 768px) {
@@ -651,18 +631,4 @@ body {
   .hero h1 {
     font-size: 38px;
   }
-}
-
-.gallery-grid img,
-.team-media img {
-  width: 100%;
-  height: auto;
-}
-
-#avaleht,
-#saavutused,
-#galerii,
-#meeskond,
-#sotsiaal {
-  scroll-margin-top: 100px;
 }
